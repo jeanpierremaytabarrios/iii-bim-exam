@@ -1,0 +1,62 @@
+body{margin: 0px;}
+.general{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    transition-duration: 0.5s;
+    background-color: wheat;
+}
+.box{
+    width: 60%;
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.bx1, .bx2{
+    width: 80%;
+    height: 35%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 1em;
+
+    animation-name: tintin;
+    animation-duration: 0.25s;
+    animation-play-state: paused;
+    animation-iteration-count: infinite;
+    animation-fill-mode: backwards;
+}
+.btn{
+    width: 16%;
+    height: 50%;
+    font-family: Arial;
+    font-size: large;
+    border-radius: 10%;
+    border-color: black;
+    border-width: 4px;
+    border-style: solid;
+    font-weight: bold;
+    background-color: white;
+    transition-duration: 0.25s;
+}
+
+#bt_b:active{background-color: #ff7e7e; border-color: #ff0000; color: red;}
+#bt_c:active{background-color: #7b84ff; border-color: #2600ff; color: rgb(0, 17, 255);}
+#bt_h:active{background-color: #fffd93; border-color: #bbb800; color: rgb(179, 176, 1);}
+#bt_k:active{background-color: #b1ff8c; border-color: #288f00; color: rgb(45, 122, 0);}
+#bt_o:active{background-color: #ffc17b; border-color: #a86e01; color: rgb(141, 97, 2);}
+#bt_r:active{background-color: #a6fff3; border-color: #039797; color: rgb(0, 131, 120);}
+#bt_s:active{background-color: #ffa2f3; border-color: #ff00bf; color: rgb(255, 0, 242);}
+#bt_t:active{background-color: #bc93ff; border-color: #a200ff; color: rgb(195, 0, 255);}
+
+@keyframes tintin{
+    0%{background-color: white;}
+    50%{background-color: rgb(168, 168, 168);}
+    100%{background-color: white;}
+}
